@@ -1,0 +1,153 @@
+* {
+    font-family: sans-serif;
+  }
+  body {
+    background-color: #f7f7f7;
+  }
+  .header {
+    display: flex;
+    font-size: 48px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3a405a;
+    height: 100px;
+    color: white;
+    padding: 24px;
+  }
+  .header > div {
+    margin: 0px auto;
+  }
+  .loginBtn {
+    font-size: 22px;
+    padding: 4px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .container {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #addButton {
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-size: 36px;
+    padding: 12px;
+  }
+  #addButton:hover {
+    background-color: #d3d3d3;
+    border-radius: 12px;
+  }
+  .books {
+    display: flex;
+    margin-top: 48px;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .book {
+    height: 200px;
+    width: 250px;
+    border: 3px solid rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1e9d8;
+    border-radius: 12px;
+  }
+  .content {
+    font-size: 24px;
+    gap: 12px;
+    font-weight: 800;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #f1e9d8;
+    padding: 20px;
+    border: 1px solid black;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 24px;
+  }
+  .container input {
+    width: 90%;
+    padding: 0px;
+    margin: 6px;
+    height: 24px;
+  }
+  #close,
+  #submitBtn {
+    height: 24px;
+    margin: 4px;
+    background: none;
+    background-color: #e4dccd;
+    border: 1px solid black;
+    font-size: 18px;
+    border-radius: 4px;
+  }
+  #close:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+  #submitBtn:hover {
+    background-color: rgba(55, 161, 55, 0.5);
+  }
+  
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+  }
+  .read {
+    background-color: rgba(55, 161, 55, 0.5);
+    width: 225px;
+    border: 0px;
+    font-size: 24px;
+    margin: 10px;
+    border-radius: 6px;
+  }
+  .read:hover {
+    background-color: rgba(55, 161, 55, 0.7);
+  }
+  .notRead {
+    background-color: rgba(255, 0, 0, 0.5);
+    width: 225px;
+    border: 0px;
+    font-size: 24px;
+    margin: 10px;
+    border-radius: 6px;
+  }
+  .notRead:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+  }
+  
+  .removeButton {
+    background-color: #dad8d8;
+    width: 225px;
+    border: 0px;
+    font-size: 24px;
+    margin: 10px;
+    border-radius: 6px;
+    text-align: center;
+  }
+  .removeButton:hover {
+    background-color: red;
+  }
