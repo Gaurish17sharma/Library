@@ -52,11 +52,10 @@ submitBtn.addEventListener("click", (event) => {
   const readButton = document.createElement("button");
   readButton.textContent = `Not Read`;
   readButton.classList.add("notRead");
-
   newBook.appendChild(readButton);
 
   readButton.addEventListener("click", () => {
-
+    book.read = !book.read;
     if (book.read) {
       readButton.textContent = "Read";
       readButton.classList.add("read");
@@ -75,14 +74,20 @@ submitBtn.addEventListener("click", (event) => {
   newBook.appendChild(removeBtn);
 
   removeBtn.addEventListener('click', ()=>{
-
     newBook.remove();
   })
 
   //now adding the new book to the book div written in html
   const booksDiv = document.querySelector(".books");
   booksDiv.appendChild(newBook);
+
+  // for removing popup and overlay after pressing submit
   popup.style.display = "none";
   overlay.style.display = "none";
+
+  // for removing the previous values added
+  document.querySelector("#title").value = "";
+  document.querySelector("#author").value = "";
+  document.querySelector("#pages").value = "";
 
 })
