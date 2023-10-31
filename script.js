@@ -9,6 +9,9 @@ button.onclick = function () {
 closeButton.onclick = function () {
   popup.style.display = "none";
   overlay.style.display = "none";
+  document.querySelector("#title").value = "";
+  document.querySelector("#author").value = "";
+  document.querySelector("#pages").value = "";
 };
 
 const submitBtn = document.querySelector("#submitBtn");
